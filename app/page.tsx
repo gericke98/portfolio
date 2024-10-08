@@ -4,30 +4,36 @@ import Path from "./path";
 import Skills from "./skills";
 import Contact from "./contact";
 import Footer from "./footer";
-import VantaBackground from "./vantaBackground";
 import { useEffect, useRef, useState } from "react";
+import dynamic from "next/dynamic";
 
+// Dynamically import VantaBackground only for desktop
+const VantaBackground = dynamic(() => import("./vantaBackground"), {
+  ssr: false,
+}); // Disable server-side rendering
 export default function Home() {
   const pathRef = useRef<HTMLDivElement | null>(null);
-  const [useVanta, setUseVanta] = useState(true);
+  const [isDesktop, setIsDesktop] = useState<boolean>(false);
 
   // Function to scroll to the Path section
   const scrollToPath = () => {
     pathRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   useEffect(() => {
-    const checkMobile = () => {
-      setUseVanta(window.innerWidth > 768); // Disable Vanta for mobile devices
+    const checkIfDesktop = () => {
+      setIsDesktop(window.innerWidth > 768); // Set to true if screen width > 768px
     };
 
-    checkMobile(); // Run on component mount
-    window.addEventListener("resize", checkMobile); // Recheck on window resize
+    // Run on mount and on window resize
+    checkIfDesktop();
+    window.addEventListener("resize", checkIfDesktop);
 
-    return () => window.removeEventListener("resize", checkMobile); // Cleanup listener
+    // Cleanup event listener
+    return () => window.removeEventListener("resize", checkIfDesktop);
   }, []);
   return (
     <>
-      {useVanta ? (
+      {isDesktop ? (
         <VantaBackground>
           <div className="w-full h-full font-[family-name:var(--font-geist-sans)] flex flex-col">
             <main className="flex flex-col items-center w-full h-full">
