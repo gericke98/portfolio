@@ -1,5 +1,5 @@
 const Contact = () => (
-  <div className="w-full py-16 bg-gray-100 flex flex-col items-center">
+  <div className="w-full py-16 bg-gray-100 flex flex-col items-center lg:px-32 px-10">
     <h2 className="lg:text-4xl text-2xl font-bold mb-8">Contact Me</h2>
     <p className="lg:text-lg text-base mb-6 text-center">
       I am open to new opportunities, collaborations, or just a friendly chat!

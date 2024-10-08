@@ -73,7 +73,7 @@ const TimelineItem = ({
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col items-center py-5 lg:px-32 px-10">
+    <div className="flex flex-col items-center py-5 lg:px-32 px-4">
       <h2 className="lg:text-4xl text-2xl font-bold mb-12 text-white">
         My Journey
       </h2>
@@ -82,7 +82,7 @@ const Timeline = () => {
         {timelineData.map((item, index) => (
           <motion.div
             key={index}
-            className="mb-10 ml-6"
+            className="mb-10 lg:ml-6 ml-2"
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}

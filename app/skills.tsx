@@ -42,7 +42,7 @@ const Skills = () => {
             >
               {/* Front Face */}
               <div
-                className="absolute w-full h-full rounded-lg p-6 shadow-md flex flex-col justify-between bg-gradient-to-r from-gray-900 to-gray-600 text-white"
+                className="absolute w-full h-full rounded-lg p-6 shadow-md flex flex-col justify-between bg-gradient-to-r from-gray-900 to-gray-600 text-white overflow-auto"
                 style={{
                   backfaceVisibility: "hidden",
                 }}
@@ -90,13 +90,13 @@ const Skills = () => {
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-500 hover:underline"
+                          className="text-blue-500 hover:underline lg:text-base text-sm"
                         >
                           {project.name}
                         </a>{" "}
                         - {project.description}
                         {/* Tech Stack */}
-                        <div className="mt-2">
+                        <div className="mt-2 gap-2">
                           <strong>Tech Stack:</strong>{" "}
                           {project.techStack?.map((tech, index) => (
                             <span

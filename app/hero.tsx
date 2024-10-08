@@ -17,7 +17,7 @@ export default function Hero({
       </p>
       <h1 className="lg:text-6xl text-3xl font-bold text-white text-center">
         From Ideas to Impactful Code <br></br>
-        <span className="lg:text-3xl text-lg">
+        <span className="lg:text-3xl text-base">
           Seeking innovative solutions that{" "}
           <span className="bg-gradient-to-r from-pink-500 via-red-500 to-purple-500 bg-clip-text text-transparent">
             challenge the status quo
