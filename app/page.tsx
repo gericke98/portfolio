@@ -4,7 +4,7 @@ import Path from "./path";
 import Skills from "./skills";
 import Contact from "./contact";
 import Footer from "./footer";
-import VantaBackground from "./vantaBackground";
+// import VantaBackground from "./vantaBackground";
 import { useRef } from "react";
 
 export default function Home() {
@@ -15,20 +15,20 @@ export default function Home() {
     pathRef.current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <VantaBackground>
-      <div className="w-full h-full font-[family-name:var(--font-geist-sans)] flex flex-col">
-        <main className="flex flex-col items-center w-full h-full">
-          <Hero onScrollToPath={scrollToPath} />
-          <div className="h-full w-full">
-            <div className="w-full h-full" ref={pathRef}>
-              <Path />
-            </div>
-            <Skills />
-            <Contact />
+    // <VantaBackground>
+    <div className="w-full h-full font-[family-name:var(--font-geist-sans)] flex flex-col">
+      <main className="flex flex-col items-center w-full h-full">
+        <Hero onScrollToPath={scrollToPath} />
+        <div className="h-full w-full">
+          <div className="w-full h-full" ref={pathRef}>
+            <Path />
           </div>
-        </main>
-        <Footer />
-      </div>
-    </VantaBackground>
+          <Skills />
+          <Contact />
+        </div>
+      </main>
+      <Footer />
+    </div>
+    // </VantaBackground>
   );
 }
