@@ -10,21 +10,9 @@ interface VantaEffect {
 const VantaBackground = ({ children }: { children: React.ReactNode }) => {
   const vantaRef = useRef(null); // Reference for Vanta effect container
   const [vantaEffect, setVantaEffect] = useState<VantaEffect | null>(null);
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768); // Set breakpoint for mobile screens
-    };
-
-    checkMobile(); // Run on component mount
-    window.addEventListener("resize", checkMobile); // Check when window is resized
-
-    return () => window.removeEventListener("resize", checkMobile); // Cleanup listener
-  }, []);
-
-  useEffect(() => {
-    if (!isMobile && !vantaEffect) {
+    if (!vantaEffect) {
       setVantaEffect(
         NET({
           el: vantaRef.current,
@@ -51,15 +39,11 @@ const VantaBackground = ({ children }: { children: React.ReactNode }) => {
     return () => {
       if (vantaEffect) vantaEffect.destroy();
     };
-  }, [vantaEffect, isMobile]);
+  }, [vantaEffect]);
 
   return (
     <div ref={vantaRef} className="lg:min-h-screen w-full">
-      {isMobile ? (
-        <div className="min-h-screen w-full bg-custom-gradient">{children}</div> // Static background on mobile
-      ) : (
-        children
-      )}
+      {children}
     </div>
   );
 };
