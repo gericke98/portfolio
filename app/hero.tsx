@@ -15,9 +15,9 @@ export default function Hero({
       <p className="lg:text-xl text-base text-slate-100 mt-4 animate-fade-in">
         Santiago Gericke Parga
       </p>
-      <h1 className="lg:text-6xl text-3xl font-bold text-white text-center">
+      <h1 className="lg:text-6xl text-2xl font-bold text-white text-center">
         From Ideas to Impactful Code <br></br>
-        <span className="lg:text-3xl text-base">
+        <span className="lg:text-3xl text-base p-0 m-0">
           Seeking innovative solutions that{" "}
           <span className="bg-gradient-to-r from-pink-500 via-red-500 to-purple-500 bg-clip-text text-transparent">
             challenge the status quo

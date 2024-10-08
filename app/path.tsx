@@ -31,13 +31,9 @@ const TimelineItem = ({
   return (
     <motion.div
       ref={ref}
-      className="w-full h-full p-4 shadow-lg rounded-md"
+      className="w-full h-48 p-4 shadow-lg rounded-md overflow-auto"
       style={{ opacity, backgroundColor }}
     >
-      {/* Timeline Circle */}
-      {/* <div className="absolute w-4 h-4 bg-yellow-300 rounded-full -left-8"></div> */}
-
-      {/* Timeline Card */}
       <div>
         <h3
           className={cn(
@@ -50,7 +46,7 @@ const TimelineItem = ({
         </h3>
         <span
           className={cn(
-            "text-sm text-gray-500",
+            "text-sm lg:text-base text-gray-500",
             title === "The Next Chapter – Silicon Valley & Beyond" &&
               "text-slate-200"
           )}
@@ -59,7 +55,7 @@ const TimelineItem = ({
         </span>
         <p
           className={cn(
-            "mt-2 text-gray-700 text-sm",
+            "mt-2 text-gray-700 lg:text-base text-sm",
             title === "The Next Chapter – Silicon Valley & Beyond" &&
               "text-gray-300"
           )}

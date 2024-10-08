@@ -31,7 +31,7 @@ export const timelineData = [
     title: "The Next Chapter – Silicon Valley & Beyond",
     date: "Present & Future",
     description:
-      "I am ready to give my all, unleashing my full potential to contribute to a top Silicon Valley startup. With a blend of entrepreneurial passion and consulting expertise, I aim to drive impactful, innovative projects that push boundaries. My goal is to be part of a transformative journey, helping shape the future through dedication, creativity, and a relentless pursuit of excellence.",
+      "After making the most of all the experiences along the journey, I am determined to embark on the new adventure of growing at a vibrant startup in Silicon Valley - a hub woven by the fabric of entrepreneurship. This opportunity will not only unleash my full potential but also enable me to bring my diverse background, endless eagerness to learn and unwavering commitment to achieving my goals.",
   },
 ];
 
