@@ -3,9 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three"; // Import three.js as required by Vanta
 import NET from "vanta/dist/vanta.net.min"; // Import the Vanta net effect
 
+interface VantaEffect {
+  destroy: () => void;
+}
+
 const VantaBackground = ({ children }: { children: React.ReactNode }) => {
   const vantaRef = useRef(null); // Reference for Vanta effect container
-  const [vantaEffect, setVantaEffect] = useState<any>(null);
+  const [vantaEffect, setVantaEffect] = useState<VantaEffect | null>(null);
 
   useEffect(() => {
     if (!vantaEffect) {
