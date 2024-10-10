@@ -85,23 +85,25 @@ const Skills = () => {
                   </h4>
                   <ul className="list-disc ml-5 mt-2 gap-1">
                     {skill.projects?.map((project, index) => (
-                      <li key={index} className="mb-4">
+                      <li key={index} className="mb-4 lg:text-base text-sm">
                         <a
                           href={project.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-blue-500 hover:underline lg:text-base text-sm"
+                          className="text-blue-500 hover:underline"
                         >
                           {project.name}
                         </a>{" "}
                         - {project.description}
                         {/* Tech Stack */}
                         <div className="mt-2 gap-2">
-                          <strong>Tech Stack:</strong>{" "}
+                          <strong className="lg:text-base text-sm">
+                            Tech Stack:
+                          </strong>{" "}
                           {project.techStack?.map((tech, index) => (
                             <span
                               key={index}
-                              className="inline-block mr-2 px-2 py-1 bg-blue-300 text-blue-900 rounded"
+                              className="inline-block mr-2 px-2 py-1 bg-blue-300 text-blue-900 rounded lg:text-base text-sm"
                             >
                               {tech}
                             </span>
