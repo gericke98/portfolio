@@ -44,16 +44,16 @@ export const skillsData: Skill[] = [
     projects: [
       {
         name: "Shameless Locator",
-        link: "https://shameless-locator-web.vercel.app/",
+        link: "https://locator.shamelesscollective.com",
         description:
           "An order tracking tool built with Next.js and Tailwind CSS.",
-        techStack: ["Next.js", "Tailwind CSS", "Vercel"],
+        techStack: ["Next.js", "Tailwind CSS", "Vercel", "Typescript"],
       },
       {
-        name: "Personal Portfolio",
-        link: "https://your-portfolio-link.vercel.app/",
+        name: "Duolingo Clone",
+        link: "next14-duolingo.vercel.app",
         description: "A modern portfolio showcasing my work and skills.",
-        techStack: ["React", "Next.js", "Vercel"],
+        techStack: ["React", "Next.js", "Drizzle", "Stripe", "Clerk"],
       },
     ],
   },
@@ -61,16 +61,7 @@ export const skillsData: Skill[] = [
     title: "Data Science & Analytics",
     description:
       "Skilled in data analysis, visualization, and predictive modeling. Proficient in Python, pandas, scikit-learn, and data visualization libraries like Matplotlib.",
-    icon: FaChartBar, // Icon reference, not JSX
-    projects: [
-      {
-        name: "Sales Prediction Model",
-        link: "https://github.com/your-username/sales-prediction",
-        description:
-          "A machine learning model predicting sales trends using time series data and regression analysis.",
-        techStack: ["Python", "Pandas", "scikit-learn", "Jupyter Notebook"],
-      },
-    ],
+    icon: FaChartBar,
   },
   {
     title: "Problem-Solving & Strategy",
