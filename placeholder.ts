@@ -51,7 +51,7 @@ export const skillsData: Skill[] = [
       },
       {
         name: "Shameless Website - Shopify Clone",
-        link: "shamelessweb.vercel.app",
+        link: "https://shamelessweb.vercel.app",
         description:
           "An order tracking tool built with Next.js and Tailwind CSS.",
         techStack: [
@@ -65,7 +65,7 @@ export const skillsData: Skill[] = [
       },
       {
         name: "Duolingo Clone",
-        link: "next14-duolingo.vercel.app",
+        link: "https://next14-duolingo.vercel.app",
         description: "A modern portfolio showcasing my work and skills.",
         techStack: ["React", "Next.js", "Drizzle", "Stripe", "Clerk"],
       },
