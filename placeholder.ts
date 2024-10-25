@@ -25,13 +25,13 @@ export const timelineData = [
     title: "Consulting Solutions & Expansion Strategy",
     date: "2020 - Present",
     description:
-      "In my consulting career, starting at AT Kearney and advancing at Metyis, I put my problem-solving and communication skills into practice by collaborating with a team on diverse projects aimed at solving large-scale challenges for major and startup companies, from optimizing revenue to developing market expansion strategies.",
+      "In my consulting career, starting at AT Kearney and advancing at Monstarlab, I put my problem-solving and communication skills into practice by collaborating with a team on diverse projects aimed at solving large-scale challenges for major and startup companies, from optimizing revenue to developing market expansion strategies.",
   },
   {
     title: "The Next Chapter – Silicon Valley & Beyond",
     date: "Present & Future",
     description:
-      "After making the most of all the experiences along the journey, I am determined to embark on the new adventure of growing at a vibrant startup in Silicon Valley - a hub woven by the fabric of entrepreneurship. This opportunity will not only unleash my full potential but also enable me to bring my diverse background, endless eagerness to learn and unwavering commitment to achieving my goals.",
+      "After making the most of all the experiences along the journey, I am determined to embark on the new adventure of growing in Silicon Valley - a hub woven by the fabric of entrepreneurship. This opportunity will not only unleash my full potential but also enable me to bring my diverse background, endless eagerness to learn and unwavering commitment to achieving my goals.",
   },
 ];
 
