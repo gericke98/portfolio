@@ -14,8 +14,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Santiago Gericke | Developer",
-  description: "Santiago Gericke | Full stack developer & Entrepreneur",
+  title: "Santiago Gericke Parga | Developer",
+  description: "Santiago Gericke Parga | Full stack developer & Entrepreneur",
 };
 
 export default function RootLayout({
