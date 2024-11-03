@@ -14,8 +14,10 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Santiago Gericke Parga | Developer",
-  description: "Santiago Gericke Parga | Full stack developer & Entrepreneur",
+  title:
+    "Santiago Gericke Parga | Full-Stack Developer, Generative AI Specialist, and Entrepreneur",
+  description:
+    "Welcome to the portfolio of Santiago Gericke Parga, a full-stack developer, generative AI specialist, and entrepreneur. Discover projects in Next.js, Python, and cloud solutions, and learn more about Santiago's journey from consulting to entrepreneurship.",
 };
 
 export default function RootLayout({
