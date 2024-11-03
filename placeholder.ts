@@ -6,6 +6,7 @@ import {
   FaHandsHelping,
   FaRocket,
   FaBook,
+  FaRobot,
 } from "react-icons/fa";
 
 export const timelineData = [
@@ -28,46 +29,109 @@ export const timelineData = [
       "In my consulting career, starting at AT Kearney and advancing at Monstarlab, I put my problem-solving and communication skills into practice by collaborating with a team on diverse projects aimed at solving large-scale challenges for major and startup companies, from optimizing revenue to developing market expansion strategies.",
   },
   {
-    title: "The Next Chapter – Silicon Valley & Beyond",
+    title: "Mastering Full-Stack Development & Generative AI Innovation",
+    date: "2020 - Present",
+    description:
+      "Since 2022, I have proactively dedicated my free time to mastering full-stack development and generative AI, building over 10 innovative solutions to gain advanced, hands-on experience. Key accomplishments include a production-ready platform that allows Shameless Collective users to track their orders seamlessly. I also developed two high-impact Python scripts that automate essential operations: one managing order fulfillment and client communication, while the other handles monthly invoice extraction for accounting. Additionally, I trained, customized, and deployed a multi-class text classification model using DistilBERT on AWS Lambda and API Gateway, underscoring my commitment to cutting-edge, applied AI solutions.",
+  },
+  {
+    title: "The Next Chapter – Bay Area & Beyond",
     date: "Present & Future",
     description:
-      "After making the most of all the experiences along the journey, I am determined to embark on the new adventure of growing in Silicon Valley - a hub woven by the fabric of entrepreneurship. This opportunity will not only unleash my full potential but also enable me to bring my diverse background, endless eagerness to learn and unwavering commitment to achieving my goals.",
+      "After making the most of all the experiences along the journey, I am determined to embark on the new adventure of growing in the Bay Area - a hub woven by the fabric of entrepreneurship. This opportunity will not only unleash my full potential but also enable me to bring my diverse background, endless eagerness to learn and unwavering commitment to achieving my goals.",
   },
 ];
 
 export const skillsData: Skill[] = [
   {
-    title: "Technical Skills",
+    title: "Full-Stack Development & Automation",
     description:
-      "Experienced in full-stack development with technologies like React, Next.js, Node.js, and Python. Proficient in designing and optimizing algorithms, building APIs, and deploying scalable web applications.",
+      "Experienced in building scalable, production-level web applications using React, Next.js, Node.js, and Python. Skilled in API development, creating automation scripts, and deploying applications. Developed over 10 custom solutions, including a production platform for Shameless Collective and automated scripts for order fulfillment and accounting.",
     icon: FaCode, // No JSX, just passing the function reference for the icon
     projects: [
       {
         name: "Shameless Locator",
         link: "https://locator.shamelesscollective.com",
         description:
-          "An order tracking tool built with Next.js and Tailwind CSS.",
-        techStack: ["Next.js", "Tailwind CSS", "Vercel", "Typescript"],
+          "An order tracking tool built with Next.js and Tailwind CSS. This tool integrates with an external logistics company (Tipsa) via API and uses SOAP responses to retrieve and display real-time order status updates.",
+        techStack: [
+          "Next.js",
+          "Tailwind CSS",
+          "Vercel",
+          "Typescript",
+          "SOAP API",
+          "TIPSA integration",
+        ],
+      },
+      {
+        name: "Order Fulfillment Automation",
+        link: "https://github.com/gericke98/shameless-order_automation",
+        description:
+          "A Python-based automation script for handling Shameless Collective's order fulfillment. This script integrates with Shopify's API and the external logistics provider Tipsa, dynamically generating shipping labels based on destination country and updating order statuses in real-time. It uses SOAP requests to log in and obtain session IDs, fetch tracking numbers, and manage multi-country fulfillment workflows.",
+        techStack: [
+          "Python",
+          "Shopify API",
+          "SOAP API",
+          "Tipsa Integration",
+          "Pandas",
+        ],
+      },
+      {
+        name: "Monthly Invoice Automation",
+        link: "https://github.com/gericke98/shameless-invoice_automation",
+        description:
+          "A Python script that automates the generation of monthly invoices for Shameless Collective. Integrates with Shopify's API to retrieve order details, applies VAT based on location, and uses ReportLab to create formatted PDF invoices with client and product details. This automation significantly reduces manual invoice processing time each month.",
+        techStack: ["Python", "Shopify API", "ReportLab", "Requests"],
       },
       {
         name: "Shameless Website - Shopify Clone",
         link: "https://shamelessweb.vercel.app",
         description:
-          "An order tracking tool built with Next.js and Tailwind CSS.",
+          "A comprehensive e-commerce solution built with Next.js that replicates key Shopify functionalities. It includes product management, payment processing, order tracking, and user authentication. The site integrates with multiple APIs and leverages TypeScript for type safety, Drizzle for database management, Clerk for authenthication and Stripe for payments management",
         techStack: [
           "Next.js",
           "Tailwind CSS",
           "Typescript",
-          "Clerk",
           "Drizzle",
           "Stripe",
+          "Clerk",
         ],
       },
       {
         name: "Duolingo Clone",
         link: "https://next14-duolingo.vercel.app",
-        description: "A modern portfolio showcasing my work and skills.",
-        techStack: ["React", "Next.js", "Drizzle", "Stripe", "Clerk"],
+        description:
+          "A language learning platform inspired by Duolingo, built with Next.js and TypeScript. This application simulates core Duolingo functionalities, including user progress tracking, subscription management, and an interactive learning interface. Optimized for performance with React components and includes efficient state management for seamless user experiences.",
+        techStack: [
+          "React",
+          "Next.js",
+          "Drizzle",
+          "Stripe",
+          "Clerk",
+          "Tailwind CSS",
+        ],
+      },
+    ],
+  },
+  {
+    title: "Generative AI Solutions",
+    description:
+      "Proficient in generative AI, with expertise in model customization, deployment, and practical applications. Developed a multi-class text classification model using DistilBERT, deployed on AWS Lambda and API Gateway for scalable, serverless API access.",
+    icon: FaRobot,
+    projects: [
+      {
+        name: "Multi-Class Text Classification Model",
+        link: "https://github.com/gericke98/GENAI-text-classificiation-model",
+        description:
+          "Built a text classification model using Hugging Face's DistilBERT, fine-tuned to categorize titles into Science, Business, Health, and Entertainment. The model is deployed in a serverless architecture on AWS Lambda and API Gateway, with load testing for performance validation. The project showcases expertise in NLP, model fine-tuning, and efficient cloud-based deployment.",
+        techStack: [
+          "AWS Lambda",
+          "AWS API Gateway",
+          "Hugging Face Transformers",
+          "DistilBERT",
+          "PyTorch",
+          "Python",
+        ],
       },
     ],
   },
