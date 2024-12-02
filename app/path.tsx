@@ -19,10 +19,10 @@ const TimelineItem = ({
     offset: ["start 99%", "end 10%"], // Trigger when the item reaches the center of the viewport
   });
 
-  const opacity = useTransform(scrollYProgress, [0.2, 0.5, 1], [0.2, 1, 0.2]);
+  const opacity = useTransform(scrollYProgress, [0.2, 0.8, 1], [0.4, 1, 0.4]);
   const backgroundColor = useTransform(
     scrollYProgress,
-    [0, 0.5, 1],
+    [0, 0.8, 1],
     title === "The Next Chapter – Silicon Valley & Beyond"
       ? ["#c0c0c0", "#dd8383", "#ab6161"]
       : ["#c0c0c0", "#cbcaca", "#c0c0c0"]
