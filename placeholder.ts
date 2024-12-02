@@ -14,13 +14,13 @@ export const timelineData = [
     title: "Foundations in Tech & Strategy",
     date: "2016 - 2020",
     description:
-      "At Universidad Pontificia Comillas, I developed a strong technical foundation in engineering and trained a structured mindset to approach and solve complex problems, building analytical and strategic thinking skills.",
+      "At Universidad Pontificia Comillas, I developed a strong technical foundation in engineering and trained a structured mindset to approach and solve complex problems, building analytical and strategic thinking skills.During this time, I discovered my passion for software development and began deep diving into programming, exploring its potential to create impactful solutions and drive innovation.",
   },
   {
     title: "Entrepreneurial Journey – Shameless Collective & Beyond",
     date: "2016 - Present",
     description:
-      "Shameless Collective began as a hobby between friends but transformed into a serious venture over the last two years. Fueled by passion and a relentless drive for innovation, we achieved a 200% increase in monthly sales by automating key processes and implementing strategic growth initiatives. My entrepreneurial path was also shaped by a year at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round—proving my ability to turn ideas into impactful, scalable businesses.",
+      "Shameless Collective began as a nascent dream among three friends but transformed into a serious venture over the last two years. Fueled by passion and a relentless drive for innovation, we achieved a 200% increase in monthly sales by automating key processes and implementing strategic growth initiatives. My entrepreneurial path was also shaped by a year at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round—proving my ability to turn ideas into impactful, scalable businesses.",
   },
   {
     title: "Consulting Solutions & Expansion Strategy",
@@ -32,13 +32,13 @@ export const timelineData = [
     title: "Mastering Full-Stack Development & Generative AI Innovation",
     date: "2020 - Present",
     description:
-      "Since 2022, I have proactively dedicated my free time to mastering full-stack development and generative AI, building over 10 innovative solutions to gain advanced, hands-on experience. Key accomplishments include a production-ready platform that allows Shameless Collective users to track their orders seamlessly. I also developed two high-impact Python scripts that automate essential operations: one managing order fulfillment and client communication, while the other handles monthly invoice extraction for accounting. Additionally, I trained, customized, and deployed a multi-class text classification model using DistilBERT on AWS Lambda and API Gateway, underscoring my commitment to cutting-edge, applied AI solutions.",
+      "In last years, I have proactively dedicated my free time to mastering full-stack development and generative AI, building over 10 innovative solutions to gain advanced, hands-on experience. Key accomplishments include a production-ready platform that allows Shameless Collective users to track their orders seamlessly. I also developed two high-impact Python scripts that automate essential operations: one managing order fulfillment and client communication, while the other handles monthly invoice extraction for accounting. Additionally, I trained, customized, and deployed a multi-class text classification model using DistilBERT on AWS Lambda and API Gateway, underscoring my commitment to cutting-edge, applied AI solutions.",
   },
   {
     title: "The Next Chapter – Bay Area & Beyond",
     date: "Present & Future",
     description:
-      "After making the most of all the experiences along the journey, I am determined to embark on the new adventure of growing in the Bay Area - a hub woven by the fabric of entrepreneurship. This opportunity will not only unleash my full potential but also enable me to bring my diverse background, endless eagerness to learn and unwavering commitment to achieving my goals.",
+      "After making the most of the experiences along my journey, I am ready to embrace the next adventure: growing in the Bay Area, a global hub of innovation and entrepreneurship. This opportunity will allow me to channel my diverse background, relentless curiosity, and unwavering dedication to contributing to a project I deeply believe in and collaborating with a team committed to creating meaningful impact and shaping the future.",
   },
 ];
 
