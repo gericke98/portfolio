@@ -133,6 +133,20 @@ export const skillsData: Skill[] = [
           "Python",
         ],
       },
+      {
+        name: "Gmail AI Response System",
+        link: "https://github.com/gericke98/gmail-ai-response",
+        description:
+          "An intelligent email response system using OpenAI's GPT model to automate customer email handling for Shameless Collective. The system integrates with the Gmail API to classify incoming emails, generate structured responses based on predefined categories, and handle notifications using Google Cloud Functions. Supports real-time email processing with multi-language support and natural language understanding.",
+        techStack: [
+          "Python",
+          "OpenAI API",
+          "Gmail API",
+          "Google Cloud Functions",
+          "Pub/Sub",
+          "REST API",
+        ],
+      },
     ],
   },
   {
