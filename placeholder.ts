@@ -1,14 +1,3 @@
-import { Skill } from "./types";
-import {
-  FaCode,
-  FaChartBar,
-  FaBrain,
-  FaHandsHelping,
-  FaRocket,
-  FaBook,
-  FaRobot,
-} from "react-icons/fa";
-
 export const timelineData = [
   {
     title: "Foundations in Tech & Strategy",
@@ -42,147 +31,143 @@ export const timelineData = [
   },
 ];
 
-export const skillsData: Skill[] = [
+export const projects = [
   {
-    title: "Full-Stack Development & Automation",
+    name: "Shameless Returns",
+    liveDemoLink: "shameless-returns-web.vercel.app",
+    githubLink: "https://github.com/gericke98/shameless-returns-web",
+    liveDemo: true,
     description:
-      "Experienced in building scalable, production-level web applications using React, Next.js, Node.js, and Python. Skilled in API development, creating automation scripts, and deploying applications. Developed over 10 custom solutions, including a production platform for Shameless Collective and automated scripts for order fulfillment and accounting.",
-    icon: FaCode, // No JSX, just passing the function reference for the icon
-    projects: [
-      {
-        name: "Shameless Locator",
-        link: "https://locator.shamelesscollective.com",
-        description:
-          "An order tracking tool built with Next.js and Tailwind CSS. This tool integrates with an external logistics company (Tipsa) via API and uses SOAP responses to retrieve and display real-time order status updates.",
-        techStack: [
-          "Next.js",
-          "Tailwind CSS",
-          "Vercel",
-          "Typescript",
-          "SOAP API",
-          "TIPSA integration",
-        ],
-      },
-      {
-        name: "Order Fulfillment Automation",
-        link: "https://github.com/gericke98/shameless-order_automation",
-        description:
-          "A Python-based automation script for handling Shameless Collective's order fulfillment. This script integrates with Shopify's API and the external logistics provider Tipsa, dynamically generating shipping labels based on destination country and updating order statuses in real-time. It uses SOAP requests to log in and obtain session IDs, fetch tracking numbers, and manage multi-country fulfillment workflows.",
-        techStack: [
-          "Python",
-          "Shopify API",
-          "SOAP API",
-          "Tipsa Integration",
-          "Pandas",
-        ],
-      },
-      {
-        name: "Monthly Invoice Automation",
-        link: "https://github.com/gericke98/shameless-invoice_automation",
-        description:
-          "A Python script that automates the generation of monthly invoices for Shameless Collective. Integrates with Shopify's API to retrieve order details, applies VAT based on location, and uses ReportLab to create formatted PDF invoices with client and product details. This automation significantly reduces manual invoice processing time each month.",
-        techStack: ["Python", "Shopify API", "ReportLab", "Requests"],
-      },
-      {
-        name: "Shameless Website - Shopify Clone",
-        link: "https://shamelessweb.vercel.app",
-        description:
-          "A comprehensive e-commerce solution built with Next.js that replicates key Shopify functionalities. It includes product management, payment processing, order tracking, and user authentication. The site integrates with multiple APIs and leverages TypeScript for type safety, Drizzle for database management, Clerk for authenthication and Stripe for payments management",
-        techStack: [
-          "Next.js",
-          "Tailwind CSS",
-          "Typescript",
-          "Drizzle",
-          "Stripe",
-          "Clerk",
-        ],
-      },
-      {
-        name: "Duolingo Clone",
-        link: "https://next14-duolingo.vercel.app",
-        description:
-          "A language learning platform inspired by Duolingo, built with Next.js and TypeScript. This application simulates core Duolingo functionalities, including user progress tracking, subscription management, and an interactive learning interface. Optimized for performance with React components and includes efficient state management for seamless user experiences.",
-        techStack: [
-          "React",
-          "Next.js",
-          "Drizzle",
-          "Stripe",
-          "Clerk",
-          "Tailwind CSS",
-        ],
-      },
+      "The <strong>Shameless Returns Portal</strong> streamlines returns, improves customer experience, and reduces manual workload. Built with <strong>Next.js</strong>, <strong>React</strong>, and <strong>Neon Serverless</strong>, it integrates with <strong>Shopify (CRM)</strong> via <strong>GraphQL API</strong> and <strong>Correos</strong> using <strong>SOAP requests</strong> for real-time tracking.",
+    techStack: [
+      "Next.js",
+      "React",
+      "Tailwind CSS",
+      "Vercel",
+      "Typescript",
+      "GraphQL API",
+      "SOAP API",
+      "Shopify",
+      "Neon Serverless",
     ],
   },
   {
-    title: "Generative AI Solutions",
+    name: "Gmail AI Response System",
+    liveDemoLink: "",
+    githubLink: "https://github.com/gericke98/gmail-ai-response",
+    liveDemo: false,
     description:
-      "Proficient in generative AI, with expertise in model customization, deployment, and practical applications. Developed a multi-class text classification model using DistilBERT, deployed on AWS Lambda and API Gateway for scalable, serverless API access.",
-    icon: FaRobot,
-    projects: [
-      {
-        name: "Multi-Class Text Classification Model",
-        link: "https://github.com/gericke98/GENAI-text-classificiation-model",
-        description:
-          "Built a text classification model using Hugging Face's DistilBERT, fine-tuned to categorize titles into Science, Business, Health, and Entertainment. The model is deployed in a serverless architecture on AWS Lambda and API Gateway, with load testing for performance validation. The project showcases expertise in NLP, model fine-tuning, and efficient cloud-based deployment.",
-        techStack: [
-          "AWS Lambda",
-          "AWS API Gateway",
-          "Hugging Face Transformers",
-          "DistilBERT",
-          "PyTorch",
-          "Python",
-        ],
-      },
-      {
-        name: "Gmail AI Response System",
-        link: "https://github.com/gericke98/gmail-ai-response",
-        description:
-          "An intelligent email response system using OpenAI's GPT model to automate customer email handling for Shameless Collective. The system integrates with the Gmail API to classify incoming emails, generate structured responses based on predefined categories, and handle notifications using Google Cloud Functions. Supports real-time email processing with multi-language support and natural language understanding.",
-        techStack: [
-          "Python",
-          "OpenAI API",
-          "Gmail API",
-          "Google Cloud Functions",
-          "Pub/Sub",
-          "REST API",
-        ],
-      },
+      "An intelligent email responder powered by <strong>OpenAI</strong> and the <strong>Gmail API</strong>. It monitors incoming emails in real-time, categorizes each message using advanced natural language processing to decide if it qualifies for an AI-generated reply, and then dispatches a context-aware response to streamline communication.",
+    techStack: [
+      "Python",
+      "OpenAI API",
+      "Gmail API",
+      "Google Cloud Functions",
+      "Pub/Sub",
+      "REST API",
     ],
   },
   {
-    title: "Data Science & Analytics",
+    name: "Duolingo Clone",
+    liveDemoLink: "https://next14-duolingo.vercel.app",
+    githubLink: "https://github.com/gericke98/next14-duolingo",
+    liveDemo: true,
     description:
-      "Skilled in data analysis, visualization, and predictive modeling. Proficient in Python, pandas, scikit-learn, and data visualization libraries like Matplotlib.",
-    icon: FaChartBar,
+      "A <strong>Next.js</strong> language platform inspired by Duolingo with interactive features. Created <strong>AI Voices</strong> using Elevenlabs AI, implemented ORM with <strong>DrizzleORM</strong> and a PostgresDB via <strong>NeonDB</strong>, integrated an admin dashboard using React Admin, and handled subscriptions using <strong>Stripe</strong>.",
+    techStack: [
+      "React",
+      "Next.js",
+      "DrizzleORM",
+      "Stripe",
+      "Clerk",
+      "Tailwind CSS",
+      "Elevenlabs AI",
+      "NeonDB",
+      "React Admin",
+    ],
   },
   {
-    title: "Problem-Solving & Strategy",
+    name: "Shameless Locator",
+    liveDemoLink: "https://locator.shamelesscollective.com",
+    githubLink: "https://github.com/gericke98/shameless-locator-web",
+    liveDemo: true,
     description:
-      "Trained in structured problem-solving through engineering and consulting experiences. Capable of analyzing complex challenges and providing data-driven, strategic solutions to optimize business operations.",
-    icon: FaBrain, // Icon reference
-  },
-  {
-    title: "Leadership & Teamwork",
-    description:
-      "Led multiple projects in entrepreneurial and consulting roles, managing teams, and driving key initiatives to successful outcomes. Skilled at fostering collaboration and aligning teams with business goals.",
-    icon: FaHandsHelping,
-  },
-  {
-    title: "Entrepreneurship & Innovation",
-    description:
-      "Experienced in co-founding and scaling businesses, driving 200% sales growth through process automation and strategic scaling. Proficient in developing MVPs, engaging with investors for pre-seed funding, and navigating dynamic markets. Skilled in agile problem-solving, product development, and bringing creative, scalable solutions to any team or project.",
-    icon: FaRocket,
-  },
-  {
-    title: "Continuous Learning & Growth",
-    description:
-      "Constantly exploring and learning new technologies, including advancements in frontend frameworks, cloud technologies, and modern web development tools.",
-    icon: FaBook,
-    learning: [
+      "A <strong>Next.js</strong> tracker integrating with <strong>Tipsa</strong> for real‑time updates. Made API integrations using SOAP requests and employed <strong>Neon Serverless</strong> for efficient data storage.",
+    techStack: [
       "Next.js",
       "Tailwind CSS",
-      "TypeScript",
-      "AI & Machine Learning",
+      "Vercel",
+      "Typescript",
+      "SOAP API",
+      "Tipsa",
+      "Neon Serverless",
+    ],
+  },
+  {
+    name: "Order Fulfillment Automation",
+    liveDemoLink: "",
+    githubLink: "https://github.com/gericke98/shameless-order_automation",
+    liveDemo: false,
+    description:
+      "A <strong>Python</strong> script that automates Shopify orders with <strong>Tipsa</strong> integration. Utilized <strong>GraphQL</strong> for API connectivity to our Shopify CRM.",
+    techStack: [
+      "Python",
+      "Shopify API",
+      "SOAP API",
+      "Tipsa",
+      "Pandas",
+      "GraphQL",
+    ],
+  },
+  {
+    name: "Shameless Website - Shopify Clone",
+    liveDemoLink: "https://shamelessweb.vercel.app",
+    githubLink: "https://github.com/gericke98/shamelessweb",
+    liveDemo: true,
+    description:
+      "A <strong>Next.js</strong> e-commerce clone featuring <strong>Clerk</strong> for authentication, <strong>Neon</strong> for data storage, <strong>Drizzle</strong> for ORM, and <strong>Stripe</strong> for payment processing.",
+    techStack: [
+      "Next.js",
+      "Tailwind CSS",
+      "Typescript",
+      "Drizzle",
+      "Stripe",
+      "Clerk",
+      "Neon",
+    ],
+  },
+  {
+    name: "Monthly Invoice Automation",
+    liveDemoLink: "",
+    githubLink: "https://github.com/gericke98/shameless-invoice_automation",
+    liveDemo: false,
+    description:
+      "Automates monthly invoices using <strong>Python</strong> and <strong>ReportLab</strong>. Leveraged <strong>GraphQL</strong> for Shopify CRM connectivity and the <strong>Gmail API</strong> to send emails.",
+    techStack: [
+      "Python",
+      "Shopify API",
+      "ReportLab",
+      "Requests",
+      "GraphQL",
+      "Gmail API",
+    ],
+  },
+  {
+    name: "Multi-Class Text Classification Model",
+    liveDemoLink: "",
+    githubLink: "https://github.com/gericke98/GENAI-text-classificiation-model",
+    liveDemo: false,
+    description:
+      "A fine‑tuned <strong>DistilBERT</strong> model for multi‑category text classification. Fine‑tuned with <strong>AWS SageMaker</strong> and deployed with an endpoint connected via <strong>LangChain</strong>.",
+    techStack: [
+      "AWS Lambda",
+      "AWS API Gateway",
+      "Hugging Face",
+      "DistilBERT",
+      "PyTorch",
+      "Python",
+      "AWS SageMaker",
+      "LangChain",
     ],
   },
 ];

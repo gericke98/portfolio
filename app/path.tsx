@@ -1,8 +1,9 @@
+// Timeline.tsx (or within your Path component)
 "use client";
-import { timelineData } from "@/placeholder";
-import React, { useRef } from "react";
+
 import { motion, useScroll, useTransform } from "framer-motion";
-import { cn } from "@/lib/utils";
+import { timelineData } from "@/placeholder";
+import { useRef } from "react";
 
 const TimelineItem = ({
   title,
@@ -16,80 +17,31 @@ const TimelineItem = ({
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start 99%", "end 10%"], // Trigger when the item reaches the center of the viewport
+    offset: ["start 80%", "end 20%"],
   });
-
-  const opacity = useTransform(scrollYProgress, [0.2, 0.8, 1], [0.4, 1, 0.4]);
-  const backgroundColor = useTransform(
-    scrollYProgress,
-    [0, 0.8, 1],
-    title === "The Next Chapter – Silicon Valley & Beyond"
-      ? ["#c0c0c0", "#dd8383", "#ab6161"]
-      : ["#c0c0c0", "#cbcaca", "#c0c0c0"]
-  );
+  // Animate scale based on scroll position for a subtle zoom effect.
+  const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
   return (
-    <motion.div
-      ref={ref}
-      className="w-full h-48 p-4 shadow-lg rounded-md overflow-auto"
-      style={{ opacity, backgroundColor }}
-    >
-      <div>
-        <h3
-          className={cn(
-            "lg:text-xl text-lg font-semibold",
-            title === "The Next Chapter – Silicon Valley & Beyond" &&
-              "text-gray-100 font-bold"
-          )}
-        >
-          {title}
-        </h3>
-        <span
-          className={cn(
-            "text-sm lg:text-base text-gray-500",
-            title === "The Next Chapter – Silicon Valley & Beyond" &&
-              "text-slate-200"
-          )}
-        >
-          {date}
-        </span>
-        <p
-          className={cn(
-            "mt-2 text-gray-700 lg:text-base text-sm",
-            title === "The Next Chapter – Silicon Valley & Beyond" &&
-              "text-gray-300"
-          )}
-        >
-          {description}
-        </p>
-      </div>
+    <motion.div ref={ref} className="relative pl-8 pb-8" style={{ scale }}>
+      {/* Timeline marker */}
+      <span className="absolute left-0 top-0 w-4 h-4 bg-purple-500 rounded-full"></span>
+      <h3 className="text-xl font-semibold text-white">{title}</h3>
+      <span className="text-sm text-gray-300">{date}</span>
+      <p className="mt-2 text-gray-200">{description}</p>
     </motion.div>
   );
 };
 
 const Timeline = () => {
   return (
-    <div className="flex flex-col items-center py-5 lg:px-32 px-4">
-      <h2 className="lg:text-4xl text-2xl font-bold mb-12 text-white">
+    <div className="py-10 px-4">
+      <h2 className="text-4xl font-bold text-center text-white mb-10">
         My Journey
       </h2>
-
-      <div className="relative border-l-2 border-gray-300">
+      <div className="relative border-l-2 border-gray-500">
         {timelineData.map((item, index) => (
-          <motion.div
-            key={index}
-            className="mb-10 lg:ml-6 ml-2"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
-          >
-            <TimelineItem
-              title={item.title}
-              date={item.date}
-              description={item.description}
-            />
-          </motion.div>
+          <TimelineItem key={index} {...item} />
         ))}
       </div>
     </div>

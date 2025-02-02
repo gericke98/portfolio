@@ -1,39 +1,59 @@
+// Hero.tsx
 "use client";
-import { motion } from "framer-motion";
+
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
+
 export default function Hero({
   onScrollToPath,
 }: {
   onScrollToPath: () => void;
 }) {
+  const { scrollY } = useScroll();
+  const [viewportHeight, setViewportHeight] = useState<number>(0);
+
+  // Set viewportHeight immediately on mount and update on resize
+  useEffect(() => {
+    // Set the initial value as soon as the component mounts
+    setViewportHeight(window.innerHeight);
+    const handleResize = () => setViewportHeight(window.innerHeight);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Use a fallback value for viewportHeight to avoid division by zero
+  const effectiveHeight = viewportHeight || 1;
+  const heroOpacity = useTransform(scrollY, [0, effectiveHeight / 2], [1, 0]);
+
   return (
     <motion.div
-      className="h-screen w-full flex flex-col  gap-4 justify-center items-center"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      transition={{ duration: 1 }}
+      className="relative h-screen w-full flex flex-col justify-center items-center text-center px-4"
+      style={{
+        backgroundColor: "#1a202c",
+        opacity: heroOpacity,
+      }}
     >
-      <p className="lg:text-xl text-base text-slate-100 mt-4 animate-fade-in">
-        Santiago Gericke Parga
-      </p>
-      <h1 className="lg:text-6xl text-2xl font-bold text-white text-center">
-        Transforming Ideas into Scalable Solutions<br></br>
-        <span className="lg:text-3xl text-base p-0 m-0">
-          <span className="bg-gradient-to-r from-pink-500 via-red-500 to-purple-500 bg-clip-text text-transparent">
-            Challenging the status quo
-          </span>{" "}
-          with full-stack development, generative AI, and strategic innovation.
-        </span>
-      </h1>
-      <p className="lg:text-lg text-sm text-slate-100 lg:mt-4 mt-1 animate-fade-in">
-        Full Stack Developer | Generative AI Specialist | Strategy Analyst |
-        Entrepreneur
-      </p>
-      <button
-        onClick={onScrollToPath}
-        className="mt-8 px-8 py-4 bg-white text-black rounded-full shadow-lg transition-transform hover:scale-110 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500"
-      >
-        Explore My Work
-      </button>
+      <div className="relative z-10">
+        <h1 className="text-4xl lg:text-6xl font-bold text-white drop-shadow-lg">
+          Santiago Gericke Parga
+        </h1>
+        <p className="mt-4 text-base lg:text-lg text-gray-200 max-w-2xl mx-auto">
+          Hey! I&apos;m <strong>Santiago</strong>, a{" "}
+          <strong>full-stack developer</strong> and{" "}
+          <strong>tech strategist</strong> passionate about building{" "}
+          <strong>AI-powered solutions</strong>. With a background in consulting
+          and entrepreneurship, I&apos;ve developed full-stack apps, automated
+          workflows, and created tools that solve real-world problems.
+        </p>
+        <motion.button
+          onClick={onScrollToPath}
+          whileHover={{ scale: 1.05 }}
+          className="mt-8 px-8 py-4 bg-white text-black rounded-full shadow-lg transition-colors duration-300 hover:bg-gradient-to-r hover:from-pink-500 hover:to-purple-500"
+          aria-label="Explore my work"
+        >
+          Explore My Work
+        </motion.button>
+      </div>
     </motion.div>
   );
 }
