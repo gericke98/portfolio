@@ -34,7 +34,7 @@ export const timelineData = [
 export const projects = [
   {
     name: "Shameless Returns",
-    liveDemoLink: "shameless-returns-web.vercel.app",
+    liveDemoLink: "https://shameless-returns-web.vercel.app",
     githubLink: "https://github.com/gericke98/shameless-returns-web",
     liveDemo: true,
     description:
