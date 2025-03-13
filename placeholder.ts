@@ -34,8 +34,8 @@ export const timelineData = [
 export const projects = [
   {
     name: "AI Customer Support Chat",
-    liveDemoLink: "https://ai-customer-support.vercel.app",
-    githubLink: "https://github.com/yourusername/ai-customer-support",
+    liveDemoLink: "https://shopify-chatbot-two.vercel.app",
+    githubLink: "https://github.com/gericke98/shopify_chatbot",
     liveDemo: true,
     description:
       "The <strong>AI Customer Support Chat</strong> provides real-time customer assistance with intelligent ticket management. Built with <strong>Next.js 14</strong> and <strong>Server Actions</strong>, it features a responsive UI and real-time updates across multiple sessions. The system leverages <strong>AI-powered responses</strong> to handle customer inquiries while enabling actionable operations like <strong>changing delivery addresses</strong> and <strong>processing returns</strong>. It integrates with <strong>Shopify</strong> via <strong>GraphQL API</strong> to access order data and perform operations in real-time. Administrators can seamlessly take over conversations for complex issues while maintaining context.",
