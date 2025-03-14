@@ -33,6 +33,26 @@ export const timelineData = [
 
 export const projects = [
   {
+    name: "Multi-Agent AWS Bedrock System",
+    liveDemoLink: "", // You can add this when you have a live demo
+    githubLink: "https://github.com/gericke98/multiagent-aws-bedrock",
+    liveDemo: false, // Change to true when you have a live demo
+    description:
+      "The <strong>Multi-Agent AWS Bedrock System</strong> implements an intelligent recommendation engine using a multi-agent architecture. Built with <strong>AWS Bedrock</strong> and <strong>Lambda</strong>, it features specialized agents that provide tailored information about hotels, Airbnbs, and restaurants. The system leverages <strong>AI-powered agents</strong> to handle complex user queries while a supervisor agent coordinates the workflow. It integrates with <strong>Amazon S3</strong> to access accommodation and restaurant data, processing filters like location, amenities, and dining preferences. The system is accessible via <strong>API Gateway</strong>, allowing seamless integration with frontend applications through HTTP requests.",
+    techStack: [
+      "AWS Bedrock",
+      "AWS Lambda",
+      "Amazon S3",
+      "API Gateway",
+      "Python",
+      "Pandas",
+      "Boto3",
+      "Environment Variables",
+      "Multi-Agent Architecture",
+      "Serverless",
+    ],
+  },
+  {
     name: "AI Customer Support Chat",
     liveDemoLink: "https://shopify-chatbot-two.vercel.app",
     githubLink: "https://github.com/gericke98/shopify_chatbot",
