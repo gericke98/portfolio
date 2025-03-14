@@ -22,13 +22,22 @@ const TimelineItem = ({
   // Animate scale based on scroll position for a subtle zoom effect.
   const scale = useTransform(scrollYProgress, [0, 1], [0.8, 1]);
 
+  // Split the description into paragraphs
+  const paragraphs = description.split("\u2028\u2028");
+
   return (
     <motion.div ref={ref} className="relative pl-8 pb-8" style={{ scale }}>
       {/* Timeline marker */}
       <span className="absolute left-0 top-0 w-4 h-4 bg-purple-500 rounded-full"></span>
       <h3 className="text-xl font-semibold text-white">{title}</h3>
       <span className="text-sm text-gray-300">{date}</span>
-      <p className="mt-2 text-gray-200">{description}</p>
+      <div className="mt-2 text-gray-200">
+        {paragraphs.map((paragraph, index) => (
+          <p key={index} className={index > 0 ? "mt-4" : ""}>
+            {paragraph}
+          </p>
+        ))}
+      </div>
     </motion.div>
   );
 };

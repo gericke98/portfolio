@@ -41,9 +41,16 @@ export default function Hero({
           Hey! I&apos;m <strong>Santiago</strong>, a{" "}
           <strong>full-stack developer</strong> and{" "}
           <strong>tech strategist</strong> passionate about building{" "}
-          <strong>AI-powered solutions</strong>. With a background in consulting
-          and entrepreneurship, I&apos;ve developed full-stack apps, automated
-          workflows, and created tools that solve real-world problems.
+          <strong>AI-powered solutions</strong>. Even though my professional
+          background is in <strong>data science</strong> and{" "}
+          <strong>tech consulting</strong>, I&apos;ve steadily expanded my
+          expertise in <strong>software engineering</strong> by building
+          <strong> production-ready platforms</strong>, developing{" "}
+          <strong>multi-agent systems</strong> with <strong>AWS Bedrock</strong>
+          , creating <strong>Next.js applications</strong> with{" "}
+          <strong>server components</strong>, and implementing{" "}
+          <strong>intelligent automation solutions</strong> that solve complex
+          business challenges.
         </p>
         <motion.button
           onClick={onScrollToPath}

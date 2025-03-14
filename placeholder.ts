@@ -9,19 +9,19 @@ export const timelineData = [
     title: "Entrepreneurial Journey – Shameless Collective & Beyond",
     date: "2016 - Present",
     description:
-      "Shameless Collective began as a nascent dream among three friends but transformed into a serious venture over the last two years. Fueled by passion and a relentless drive for innovation, we achieved a 200% increase in monthly sales by automating key processes and implementing strategic growth initiatives. My entrepreneurial path was also shaped by a year at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round—proving my ability to turn ideas into impactful, scalable businesses.",
+      "Shameless Collective began as a nascent dream among three friends but transformed into a serious venture over the last two years. Noticing we were suffering in client service and retention, I developed a full-stack returns portal and an AI-powered chatbot that drove us to boost our recurring customers and boost our sales by 200%.\u2028\u2028My entrepreneurial spirit was significantly boosted during my time at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round",
   },
   {
     title: "Consulting Solutions & Expansion Strategy",
     date: "2020 - Present",
     description:
-      "In my consulting career, starting at AT Kearney and advancing at Monstarlab, I put my problem-solving and communication skills into practice by collaborating with a team on diverse projects aimed at solving large-scale challenges for major and startup companies, from optimizing revenue to developing market expansion strategies.",
+      "In my consulting career, starting at AT Kearney and advancing at Monstarlab, I leveraged my technical expertise to develop data-driven solutions for enterprise clients. I built pricing optimization models for top-tier beverage companies in Spain using R and Python, and defined go-to-market strategies for FMCG companies by implementing advanced analytics with SQL and AWS. These technical implementations helped clients solve large-scale challenges, from optimizing revenue streams to developing data-backed market expansion strategies.",
   },
   {
     title: "Mastering Full-Stack Development & Generative AI Innovation",
     date: "2020 - Present",
     description:
-      "In last years, I have proactively dedicated my free time to mastering full-stack development and generative AI, building over 10 innovative solutions to gain advanced, hands-on experience. Key accomplishments include a production-ready platform that allows Shameless Collective users to track their orders seamlessly. I also developed two high-impact Python scripts that automate essential operations: one managing order fulfillment and client communication, while the other handles monthly invoice extraction for accounting. Additionally, I trained, customized, and deployed a multi-class text classification model using DistilBERT on AWS Lambda and API Gateway, underscoring my commitment to cutting-edge, applied AI solutions.",
+      "In recent years, I've built a diverse portfolio of production-ready applications spanning full-stack development and generative AI. My projects include customer-facing web applications using Next.js and React, backend automation systems with Python, and advanced AI solutions leveraging AWS services. I've implemented real-time API integrations, developed intelligent chatbots, created operational automation tools, and deployed machine learning models.",
   },
   {
     title: "The Next Chapter – Bay Area & Beyond",
