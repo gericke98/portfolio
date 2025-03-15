@@ -9,7 +9,7 @@ export const timelineData = [
     title: "Entrepreneurial Journey – Shameless Collective & Beyond",
     date: "2016 - Present",
     description:
-      "Shameless Collective began as a nascent dream among three friends but transformed into a serious venture over the last two years. Noticing we were suffering in client service and retention, I developed a full-stack returns portal and an AI-powered chatbot that drove us to boost our recurring customers and boost our sales by 200%.\u2028\u2028My entrepreneurial spirit was significantly boosted during my time at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round",
+      "Shameless Collective began as a nascent dream among three friends but transformed into a serious venture over the last two years. Noticing we were suffering in client service and retention, I developed a full-stack returns portal and an AI-powered chatbot that drove us to boost our recurring customers and our sales by 200%.\u2028\u2028My entrepreneurial spirit was significantly spurred during my time at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round",
   },
   {
     title: "Consulting Solutions & Expansion Strategy",
@@ -27,7 +27,7 @@ export const timelineData = [
     title: "The Next Chapter – Bay Area & Beyond",
     date: "Present & Future",
     description:
-      "After making the most of the experiences along my journey, I am ready to embrace the next adventure: growing in the Bay Area, a global hub of innovation and entrepreneurship. This opportunity will allow me to channel my diverse background, relentless curiosity, and unwavering dedication to contributing to a project I deeply believe in and collaborating with a team committed to creating meaningful impact and shaping the future.",
+      "After making the most of the experiences along my journey, I am ready to embrace the next adventure: growing in the Bay Area, a global hub of innovation and entrepreneurship. I'm excited to join a tech company where I can apply my technical skills and business experience to solve meaningful problems. My goal is to work with a talented team on products I believe in, while continuing to develop as both an engineer and entrepreneur.",
   },
 ];
 
