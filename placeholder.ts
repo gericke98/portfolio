@@ -54,7 +54,7 @@ export const projects = [
   },
   {
     name: "AI Customer Support Chat",
-    liveDemoLink: "https://shopify-chatbot-two.vercel.app",
+    liveDemoLink: "https://shamelesscollective.com",
     githubLink: "https://github.com/gericke98/shopify_chatbot",
     liveDemo: true,
     description:
