@@ -40,9 +40,8 @@ export const timelineData = [
 export const projects = [
   {
     name: "Tayliq",
-    liveDemoLink: "https://tayliq.com",
-    githubLink: "https://github.com/gericke98/tayliq",
-    liveDemo: false,
+    liveDemoLink: "https://www.tayliq.com",
+    liveDemo: true,
     description:
       "Tayliq is a <strong>Shopify App</strong> that brings <strong>AI-powered customer support</strong> to DTC brands. Built with <strong>Remix</strong> and <strong>Polaris</strong> for the embedded UI and <strong>App Bridge</strong> for secure shop integration, it includes GPT-4 conversational support, voice capabilities (via <strong>ElevenLabs</strong>), and seamless admin actions using <strong>GraphQL</strong>. The backend is structured via <strong>App Proxy endpoints</strong> for real-time interactions and custom analytics dashboards. Deployed on <strong>Vercel</strong> with GDPR-compliant OAuth authentication.",
     techStack: [
