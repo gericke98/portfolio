@@ -1,33 +1,39 @@
 export const timelineData = [
   {
     title: "Foundations in Tech & Strategy",
-    date: "2016 - 2020",
+    date: "2016 – 2020",
     description:
-      "At Universidad Pontificia Comillas, I developed a strong technical foundation in engineering and trained a structured mindset to approach and solve complex problems, building analytical and strategic thinking skills.During this time, I discovered my passion for software development and began deep diving into programming, exploring its potential to create impactful solutions and drive innovation.",
+      "At Universidad Pontificia Comillas, I developed a strong technical foundation in engineering and trained a structured mindset to approach and solve complex problems. This period sharpened my analytical and strategic thinking. It was also when I discovered software development — a creative tool to build, automate, and innovate.",
   },
   {
-    title: "Entrepreneurial Journey – Shameless Collective & Beyond",
-    date: "2016 - Present",
+    title: "Entrepreneurial Spark – Shameless Collective & Beyond",
+    date: "2016 – Present",
     description:
-      "Shameless Collective began as a nascent dream among three friends but transformed into a serious venture over the last two years. Noticing we were suffering in client service and retention, I developed a full-stack returns portal and an AI-powered chatbot that drove us to boost our recurring customers and our sales by 200%.\u2028\u2028My entrepreneurial spirit was significantly spurred during my time at Santa Clara University, where I immersed myself in Silicon Valley's startup culture. Alongside Shameless Collective, I pursued two additional ventures, developing MVPs that attracted over 100 potential users and engaging in discussions to raise a €100,000 pre-seed round",
+      "Shameless Collective started as a hobby with two friends, and in recent years evolved into a serious venture. To scale it, I built a full-stack returns platform and an AI-powered chatbot that improved customer retention and doubled sales. During my year at Santa Clara University, I immersed myself in Silicon Valley’s startup culture and pursued two other ventures, building MVPs with 100+ potential users and engaging investors for a €100k pre-seed round.",
   },
   {
-    title: "Consulting Solutions & Expansion Strategy",
-    date: "2020 - Present",
+    title: "Scaling Solutions – Data, Strategy & AI in Consulting",
+    date: "2020 – Present",
     description:
-      "In my consulting career, starting at AT Kearney and advancing at Monstarlab, I leveraged my technical expertise to develop data-driven solutions for enterprise clients. I built pricing optimization models for top-tier beverage companies in Spain using R and Python, and defined go-to-market strategies for FMCG companies by implementing advanced analytics with SQL and AWS. These technical implementations helped clients solve large-scale challenges, from optimizing revenue streams to developing data-backed market expansion strategies.",
+      "My consulting path, from AT Kearney to Monstarlab, gave me the opportunity to apply data and AI to solve complex business problems. I led the development of pricing optimization features, sales clustering models, and go-to-market strategies for global F&B clients — combining Python, R, SQL, and AWS to deliver scalable, revenue-driving tools.",
   },
   {
-    title: "Mastering Full-Stack Development & Generative AI Innovation",
-    date: "2020 - Present",
+    title: "Full-Stack & AI Innovation – Learning by Building",
+    date: "2022 – Present",
     description:
-      "In recent years, I've built a diverse portfolio of production-ready applications spanning full-stack development and generative AI. My projects include customer-facing web applications using Next.js and React, backend automation systems with Python, and advanced AI solutions leveraging AWS services. I've implemented real-time API integrations, developed intelligent chatbots, created operational automation tools, and deployed machine learning models.",
+      "Beyond formal roles, I’ve built 10+ production-grade apps across AI, full-stack, and automation — from real-time order trackers to generative AI interfaces. Each project helped me sharpen core skills in React, Next.js, Python, OpenAI, and AWS, and reinforced my belief in building things that solve real problems and scale with impact.",
+  },
+  {
+    title: "Tayliq – Building AI Infrastructure for DTC Brands",
+    date: "2025 – Present",
+    description:
+      "As CEO & Co-founder of Tayliq, I launched a Shopify App that equips DTC brands with AI-powered customer support. I built secure authentication, embedded UI, and real-time backend architecture using Remix, GraphQL, and GPT-4. We onboarded early clients organically, demonstrating tangible gains in CX and cost efficiency. Tayliq is the product of everything I’ve learned — tech, design, product, and execution — coming together.",
   },
   {
     title: "The Next Chapter – Bay Area & Beyond",
     date: "Present & Future",
     description:
-      "After making the most of the experiences along my journey, I am ready to embrace the next adventure: growing in the Bay Area, a global hub of innovation and entrepreneurship. I'm excited to join a tech company where I can apply my technical skills and business experience to solve meaningful problems. My goal is to work with a talented team on products I believe in, while continuing to develop as both an engineer and entrepreneur.",
+      "After years of building, learning, and leading, I’m ready for the next challenge: growing in the Bay Area — a global hub of innovation. I’m looking to join a high-impact tech company where I can combine my engineering skills, product mindset, and entrepreneurial energy to shape the future with AI-powered solutions that matter.",
   },
 ];
 

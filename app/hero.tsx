@@ -38,20 +38,19 @@ export default function Hero({
           Santiago Gericke Parga
         </h1>
         <p className="mt-4 text-base lg:text-lg text-gray-200 max-w-2xl mx-auto">
-          Hey! I&apos;m <strong>Santiago</strong>, a{" "}
-          <strong>full-stack developer</strong> and{" "}
-          <strong>tech strategist</strong> passionate about building{" "}
-          <strong>AI-powered solutions</strong>. Even though my professional
-          background is in <strong>data science</strong> and{" "}
-          <strong>tech consulting</strong>, I&apos;ve steadily expanded my
-          expertise in <strong>software engineering</strong> by building
-          <strong> production-ready platforms</strong>, developing{" "}
-          <strong>multi-agent systems</strong> with <strong>AWS Bedrock</strong>
-          , creating <strong>Next.js applications</strong> with{" "}
-          <strong>server components</strong>, and implementing{" "}
-          <strong>intelligent automation solutions</strong> that solve complex
-          business challenges.
+          Hey! I&apos;m <strong>Santiago</strong> — a{" "}
+          <strong>full-stack AI builder</strong> blending{" "}
+          <strong>engineering</strong>, <strong>entrepreneurship</strong>, and{" "}
+          <strong>product thinking</strong> to turn bold ideas into scalable
+          impact. I&apos;m the founder of <strong>Tayliq</strong>, a Shopify App
+          for <strong>AI-powered customer support</strong>, and{" "}
+          <strong>CTO at Shameless Collective</strong>. My background spans{" "}
+          <strong>data science</strong>, <strong>tech consulting</strong>, and{" "}
+          <strong>software engineering</strong> — but what truly drives me is{" "}
+          building real-world <strong>AI systems</strong> that remove friction,{" "}
+          unlock growth, and shape better experiences for teams and users.
         </p>
+
         <motion.button
           onClick={onScrollToPath}
           whileHover={{ scale: 1.05 }}
