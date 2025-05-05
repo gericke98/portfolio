@@ -39,6 +39,27 @@ export const timelineData = [
 
 export const projects = [
   {
+    name: "Tayliq",
+    liveDemoLink: "https://tayliq.com",
+    githubLink: "https://github.com/gericke98/tayliq",
+    liveDemo: false,
+    description:
+      "Tayliq is a <strong>Shopify App</strong> that brings <strong>AI-powered customer support</strong> to DTC brands. Built with <strong>Remix</strong> and <strong>Polaris</strong> for the embedded UI and <strong>App Bridge</strong> for secure shop integration, it includes GPT-4 conversational support, voice capabilities (via <strong>ElevenLabs</strong>), and seamless admin actions using <strong>GraphQL</strong>. The backend is structured via <strong>App Proxy endpoints</strong> for real-time interactions and custom analytics dashboards. Deployed on <strong>Vercel</strong> with GDPR-compliant OAuth authentication.",
+    techStack: [
+      "GPT-4",
+      "Shopify GraphQL API",
+      "Remix",
+      "Tailwind CSS",
+      "Polaris",
+      "App Bridge",
+      "OAuth",
+      "App Proxy",
+      "ElevenLabs",
+      "Vercel",
+      "TypeScript",
+    ],
+  },
+  {
     name: "Multi-Agent AWS Bedrock System",
     liveDemoLink: "", // You can add this when you have a live demo
     githubLink: "https://github.com/gericke98/multiagent-aws-bedrock",
